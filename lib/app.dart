@@ -16,11 +16,19 @@ class App extends StatefulWidget {
 
 class _AppState extends State<App> {
   bool isPlaying = false;
-  int pathIndex = 0;
+  int pathIndex = -1;
 
   Future<void> _togglePlay() async {
     if (!isPlaying) {
-      setState(() { isPlaying = true; });
+      if (pathIndex == -1) {
+        pathIndex = 0;
+      }
+
+      setState(() {
+        isPlaying = true;
+        pathIndex += 0;
+      });
+
       await widget.player.play(UrlSource(songs[pathIndex].url));
     } else {
       setState(() { isPlaying = false; });

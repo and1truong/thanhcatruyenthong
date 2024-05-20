@@ -20,9 +20,15 @@ class _SongList extends State<SongList> {
   Widget build(BuildContext context) {
     List<Widget> rows = [];
 
+    const Icon btnActive = Icon(Icons.play_arrow_outlined, size: 32);
+    const Icon btnInactive = Icon(Icons.play_arrow_sharp, size: 32 );
+    const TextStyle styleActive = TextStyle(fontWeight: FontWeight.bold);
+    const TextStyle styleInactive = TextStyle(fontWeight: FontWeight.normal);
+
     // loop through songs
     for (var i = 0; i < widget.list.length; i++) {
       Song song = widget.list[i];
+      bool isActive = i == widget.pathIndex;
 
       callback () async {
         widget.onSelectItem.call(i).call();
@@ -30,10 +36,8 @@ class _SongList extends State<SongList> {
 
       rows.insert(rows.length, Row(
         children: [
-          i == widget.pathIndex 
-            ? RawMaterialButton(onPressed: callback,child: const Icon(Icons.check_circle, size: 32),) 
-            : RawMaterialButton(onPressed: callback, child: const Icon(Icons.check, size: 32 ) ),
-          Text(song.name)
+          RawMaterialButton(onPressed: callback,child: isActive ? btnActive : btnInactive ),
+          Text(song.name, style: isActive ? styleActive : styleInactive),
         ],
       ));
     }

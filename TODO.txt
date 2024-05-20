@@ -1,0 +1,11 @@
+============
+TODO LIST
+============
+
+1 - Tiếng Việt
+2 - Liệt kê theo thứ tự
+3 - Filter
+4 - Link to download song
+5 - Lyrics
+6 - Android build
+7 - iPhone build
