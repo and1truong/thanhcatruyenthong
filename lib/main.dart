@@ -1,6 +1,6 @@
 import 'package:audioplayers/audioplayers.dart';
 import 'package:flutter/material.dart';
-import 'package:myapp/app.dart';
+import 'package:thanhca/app.dart';
 
 void main() {
   runApp(const Wrapper());
@@ -18,9 +18,9 @@ class Wrapper extends StatelessWidget {
       title: 'Thánh Ca Truyền Thống',
       theme: ThemeData(
         colorScheme: ColorScheme.fromSeed(
-          seedColor:  Color.fromARGB(250, 17, 73, 84),
-          primary: Color.fromARGB(250, 17, 73, 84),
-          inversePrimary: Color.fromARGB(255, 216, 255, 41),
+          seedColor:  const Color.fromARGB(250, 17, 73, 84),
+          primary: const Color.fromARGB(250, 17, 73, 84),
+          inversePrimary: const Color.fromARGB(255, 216, 255, 41),
           ),
         useMaterial3: true,
       ),

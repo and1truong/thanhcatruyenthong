@@ -1,6 +1,6 @@
 
 import 'package:flutter/material.dart';
-import 'package:myapp/data.dart';
+import 'package:thanhca/data.dart';
 
 typedef SeleteItemCallback = VoidCallback Function(int i);
 

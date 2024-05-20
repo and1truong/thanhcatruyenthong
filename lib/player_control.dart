@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:myapp/song_list.dart';
+import 'package:thanhca/song_list.dart';
 
 class PlayerControl extends StatefulWidget {
   final bool isPlaying;

@@ -1,8 +1,8 @@
 import 'package:flutter/material.dart';
 import 'package:audioplayers/audioplayers.dart';
-import 'package:myapp/data.dart';
-import 'package:myapp/player_control.dart';
-import 'package:myapp/song_list.dart';
+import 'package:thanhca/data.dart';
+import 'package:thanhca/player_control.dart';
+import 'package:thanhca/song_list.dart';
 
 class App extends StatefulWidget {
   const App({super.key, required this.title, required this.player });
@@ -32,6 +32,7 @@ class _AppState extends State<App> {
     return () async {
         setState(() { 
           if (i >= 0 && i < songs.length) {
+            isPlaying = true;
             pathIndex = i;
           }
         });
