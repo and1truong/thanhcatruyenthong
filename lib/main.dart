@@ -17,12 +17,16 @@ class Wrapper extends StatelessWidget {
     return MaterialApp(
       title: 'Thánh Ca Truyền Thống',
       theme: ThemeData(
-        colorScheme: ColorScheme.fromSeed(seedColor: Colors.greenAccent),
+        colorScheme: ColorScheme.fromSeed(
+          seedColor:  Color.fromARGB(250, 17, 73, 84),
+          primary: Color.fromARGB(250, 17, 73, 84),
+          inversePrimary: Color.fromARGB(255, 216, 255, 41),
+          ),
         useMaterial3: true,
       ),
       home: App(
         player: player,
-        title: 'Thánh Ca Truyền Thống 🎹',
+        title: 'Thánh Ca Truyền Thống',
       ),
     );
   }

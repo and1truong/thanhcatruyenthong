@@ -21,7 +21,7 @@ class _AppState extends State<App> {
   Future<void> _togglePlay() async {
     if (!isPlaying) {
       setState(() { isPlaying = true; });
-      await widget.player.play(songs[pathIndex].url);
+      await widget.player.play(UrlSource(songs[pathIndex].url));
     } else {
       setState(() { isPlaying = false; });
       await widget.player.pause();
@@ -36,10 +36,8 @@ class _AppState extends State<App> {
           }
         });
 
-        if (isPlaying) {
-          await widget.player.stop();
-          await widget.player.play(songs[pathIndex].url);
-        }
+        await widget.player.stop();
+        await widget.player.play(UrlSource(songs[pathIndex].url));
     };
   }
 
@@ -47,7 +45,8 @@ class _AppState extends State<App> {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        backgroundColor: Theme.of(context).colorScheme.inversePrimary,
+        backgroundColor: Theme.of(context).colorScheme.primary,
+        foregroundColor: Theme.of(context).colorScheme.inversePrimary,
         title: Text(widget.title),
       ),
       bottomNavigationBar: PlayerControl(isPlaying: isPlaying, pathIndex: pathIndex, length: songs.length, onSelectItem: _selectItem, togglePlay: _togglePlay),
