@@ -14,25 +14,22 @@ class Wrapper extends StatelessWidget {
   Widget build(BuildContext context) {
     final player = AudioPlayer();
 
-    AudioPlayer.global.setAudioContext(
-      AudioContext(
+    AudioPlayer.global.setAudioContext(AudioContext(
         android: const AudioContextAndroid(
           stayAwake: true,
         ),
         iOS: AudioContextIOS(
           category: AVAudioSessionCategory.playback,
-        )
-      )
-    );
+        )));
 
     return MaterialApp(
-      title: 'Thánh Ca Truyền Thống',
+      title: 'Thánh Ca Truyền Thống!!',
       theme: ThemeData(
         colorScheme: ColorScheme.fromSeed(
-          seedColor:  const Color.fromARGB(250, 17, 73, 84),
+          seedColor: const Color.fromARGB(250, 17, 73, 84),
           primary: const Color.fromARGB(250, 17, 73, 84),
           inversePrimary: const Color.fromARGB(255, 216, 255, 41),
-          ),
+        ),
         useMaterial3: true,
       ),
       home: App(
