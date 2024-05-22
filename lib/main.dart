@@ -23,7 +23,7 @@ class Wrapper extends StatelessWidget {
         )));
 
     return MaterialApp(
-      title: 'Thánh Ca Truyền Thống!!',
+      title: 'Thánh Ca Truyền Thống',
       theme: ThemeData(
         colorScheme: ColorScheme.fromSeed(
           seedColor: const Color.fromARGB(250, 17, 73, 84),
