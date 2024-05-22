@@ -31,7 +31,7 @@ class PlayerControl extends StatelessWidget {
             onPressed: togglePlay,
             child: Icon(
                 isPlaying ? Icons.pause_circle : Icons.play_arrow_rounded,
-                size: 50),
+                size: 48),
           ),
           RawMaterialButton(
             onPressed: () => onSelectItem.call(pathIndex + 1).call(),

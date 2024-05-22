@@ -18,8 +18,6 @@ class SongList extends StatelessWidget {
   Widget build(BuildContext context) {
     List<Widget> rows = [];
 
-    const Icon btnActive = Icon(Icons.play_arrow_outlined, size: 32);
-    const Icon btnInactive = Icon(Icons.play_arrow_sharp, size: 32);
     const TextStyle styleActive = TextStyle(fontWeight: FontWeight.bold);
     const TextStyle styleInactive = TextStyle(fontWeight: FontWeight.normal);
 
@@ -28,7 +26,7 @@ class SongList extends StatelessWidget {
       Song song = list[i];
       bool isActive = i == pathIndex;
 
-      callback() async {
+      Future<void> callback() async {
         onSelectItem.call(i).call();
       }
 
@@ -36,10 +34,13 @@ class SongList extends StatelessWidget {
           rows.length,
           Row(
             children: [
-              RawMaterialButton(
-                  onPressed: callback,
-                  child: isActive ? btnActive : btnInactive),
-              Text(song.name, style: isActive ? styleActive : styleInactive),
+              TextButton(
+                onPressed: callback,
+                child: Padding(
+                  padding: const EdgeInsets.all(12.0),
+                  child: Text(song.name, style: isActive ? styleActive : styleInactive),
+                  ),
+              ),
             ],
           ));
     }
