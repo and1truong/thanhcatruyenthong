@@ -462,7 +462,7 @@ final List<Song> songs = [
   Song(
       name: "290. Nuong-canh-vinh-sinh",
       url: "/Bai-290.-Nuong-canh-vinh-sinh.mp3"),
-  Song(name: "291. Di-tung-buoc", url: "/Bai-291.-Di-tung-buoc.mp3"),
+  Song(name: "291. Đi từng bước", url: "/Bai-291.-Di-tung-buoc.mp3"),
   Song(
       name: "292. Hang-nuong-trong-Chua-muon-doi",
       url: "/Bai-292.-Hang-nuong-trong-Chua-muon-doi.mp3"),
@@ -471,29 +471,29 @@ final List<Song> songs = [
       url: "/Bai-294.-Duong-quang-Thien-Quoc.mp3"),
   Song(name: "295. Luon-moi-phut", url: "/Bai-295.-Luon-moi-phut.mp3"),
   Song(
-      name: "297. That-hanh-vinh-thay-!",
+      name: "297. That-hanh-vinh-thay!",
       url: "/Bai-297.-That-hanh-vinh-thay-!.mp3"),
   Song(name: "299. Cang-yeu-Chua-hon", url: "/Bai-299.-Cang-yeu-Chua-hon.mp3"),
   Song(
-      name: "300. Kia,-long-yeu-thuong-Chua-phi-th",
+      name: "300. Kìa lòng yêu thương CHÚA phi thường",
       url: "/Bai-300.-Kia,-long-yeu-thuong-Chua-phi-th.mp3"),
-  Song(name: "301. Oi-tinh-thuong", url: "/Bai-301.-Oi-tinh-thuong.mp3"),
+  Song(name: "301. Ôi tình thương", url: "/Bai-301.-Oi-tinh-thuong.mp3"),
   Song(name: "302. Hong-an-cuu-an", url: "/Bai-302.-Hong-an-cuu-an.mp3"),
-  Song(name: "303. An-Dien", url: "/Bai-303.-An-Dien.mp3"),
+  Song(name: "303. Ân-điển", url: "/Bai-303.-An-Dien.mp3"),
   Song(
       name: "304. Luon-luon-tuong-con-troi",
       url: "/Bai-304.-Luon-luon-tuong-con-troi.mp3"),
   Song(
-      name: "306. Ta-thang-nho-An-Dien",
+      name: "306. Ta thắng nhờ ân-điển",
       url: "/Bai-306.-Ta-thang-nho-An-Dien.mp3"),
   Song(
-      name: "309. Ta-thang-nho-Duc-Tin",
+      name: "309. Ta thắng nhờ đức tin",
       url: "/Bai-309.-Ta-thang-nho-Duc-Tin.mp3"),
   Song(
-      name: "310. Duc-Tin,-Trong-cay,-Yeu-Thuong",
+      name: "310. Đức Tin - Trông Cậy - Yêu Thương",
       url: "/Bai-310.-Duc-Tin,-Trong-cay,-Yeu-Thuong.mp3"),
   Song(
-      name: "312. Con-Troi-xong-ra-chien-dau",
+      name: "312. Con Trời xông ra chiến đấu",
       url: "/Bai-312.-Con-Troi-xong-ra-chien-dau.mp3"),
   Song(
       name: "313. Phuoc-am-Jesus-mun-thuo-con-nguy",
@@ -592,7 +592,7 @@ final List<Song> songs = [
       name: "383. Hiến cả thảy cho Ngài",
       url: "/Bai-383.-Hien-ca-thay-cho-Ngai.mp3"),
   Song(
-      name: "384. Tuy-toi-co-ca-thien-ha",
+      name: "384. Tuy tôi có cả thiên hạ",
       url: "/Bai-384.-Tuy-toi-co-ca-thien-ha.mp3"),
   Song(name: "385. Hu-khong", url: "/Bai-385.-Hu-khong.mp3"),
   Song(name: "386. Khi-Jesus-qua", url: "/Bai-386.-Khi-Jesus-qua.mp3"),
@@ -603,11 +603,11 @@ final List<Song> songs = [
       name: "390. Chim sẻ Chúa vẫn chú mắt vào",
       url: "/Bai-390.-Chim-se-Chua-van-chu-mat-vao.mp3"),
   Song(
-      name: "391. Ngam-Jesus-dung-xao",
+      name: "391. Ngắm Giê-su đừng xao",
       url: "/Bai-391.-Ngam-Jesus-dung-xao.mp3"),
   Song(name: "392. Go-go-tha", url: "/Bai-392.-Go-go-tha.mp3"),
   Song(
-      name: "396. Vien-ngoc-dep-rong", url: "/Bai-396.-Vien-ngoc-dep-rong.mp3"),
+      name: "396. Viên ngọc đẹp ròng", url: "/Bai-396.-Vien-ngoc-dep-rong.mp3"),
   Song(name: "400. Tiệc Thánh", url: "/Bai-400.-Tiec-thanh.mp3"),
   Song(name: "401. Chúc hôn lễ", url: "/Bai-401.-Chuc-hon-le.mp3"),
   Song(
@@ -618,32 +618,32 @@ final List<Song> songs = [
       name: "410. Tiếng gọi con gặt Tieng-goi-con-gat",
       url: "/Bai-410.-Tieng-goi-con-gat.mp3"),
   Song(name: "412. Việt Nam ca", url: "/Bai-412.-Viet-Nam-ca.mp3"),
-  Song(name: "413. Ngọi danh Giê-su", url: "/Bai-413.-Ngoi-Danh-Jesus.mp3"),
+  Song(name: "413. Ngợi danh Giê-su", url: "/Bai-413.-Ngoi-Danh-Jesus.mp3"),
   Song(name: "414. Mua-gat-da-den", url: "/Bai-414.-Mua-gat-da-den.mp3"),
   Song(
       name: "415. Ơn Giê-su cao lắm thay",
       url: "/Bai-415.-On-Jesus-cao-sau-lam-thay.mp3"),
   Song(
-      name: "417. Trong-mong-on-chi-cao",
+      name: "417. Trông mong ơn chí cao",
       url: "/Bai-417.-Trong-mong-on-chi-cao.mp3"),
   Song(
-      name: "419. Hon-ta-hang-khen-Chua",
+      name: "419. Hồn ta hằng khen CHÚA",
       url: "/Bai-419.-Hon-ta-hang-khen-Chua.mp3"),
   Song(
       name: "420. Ton-vinh-Ba-Ngoi-Duc-Chua-Troi",
       url: "/Bai-420.-Ton-vinh-Ba-Ngoi-Duc-Chua-Troi.mp3"),
   Song(name: "421. Doan-thien-ca", url: "/Bai-421.-Doan-thien-ca.mp3"),
   Song(
-      name: "425. Nuoc-Duc-Chua-Troi", url: "/Bai-425.-Nuoc-Duc-Chua-Troi.mp3"),
+      name: "425. Nước Đức Chúa Trời", url: "/Bai-425.-Nuoc-Duc-Chua-Troi.mp3"),
   Song(
       name: "427. Neo tôi chắc, rất chắc!",
       url: "/Bai-427.-Neo-toi-chac,-rat-chac.mp3"),
   Song(name: "430. Tin cậy vâng lời", url: "/Bai-430.-Tin-cay-vang-loi.mp3"),
   Song(
-      name: "432. Xin-Chua-mo-mat-toi",
+      name: "432. Xin CHÚA mở mắt tôi",
       url: "/Bai-432.-Xin-Chua-mo-mat-toi.mp3"),
   Song(
-      name: "433. Gie-Ho-Va-la-Dang-giu-toi",
+      name: "433. Giê-hô-va là Đấng giữ tôi",
       url: "/Bai-433.-Gie-Ho-Va-la-Dang-giu-toi.mp3"),
   Song(
       name: "437. Đức Chúa Trời yêu thương thế gian",
@@ -662,10 +662,10 @@ final List<Song> songs = [
   Song(
       name: "453. Dan-long-trung-tin", url: "/Bai-453.-Dan-long-trung-tin.mp3"),
   Song(
-      name: "455. Ve-tuoi-dep-cua-Christ",
+      name: "455. Vẻ đẹp của CHRIST",
       url: "/Bai-455.-Ve-tuoi-dep-cua-Christ.mp3"),
   Song(
-      name: "472. Su-yeu-thuong-lon-lao",
+      name: "472. Sự yêu thương lớn lao",
       url: "/Bai-472.-Su-yeu-thuong-lon-lao.mp3"),
   Song(
       name: "477. Bình yên rất phước", url: "/Bai-477.-Binh-yen-rat-phuoc.mp3"),
