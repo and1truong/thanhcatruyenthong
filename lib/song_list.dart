@@ -18,8 +18,8 @@ class SongList extends StatelessWidget {
   Widget build(BuildContext context) {
     List<Widget> rows = [];
 
-    const TextStyle styleActive = TextStyle(fontWeight: FontWeight.bold);
-    const TextStyle styleInactive = TextStyle(fontWeight: FontWeight.normal);
+    TextStyle styleActive = TextStyle(fontWeight: FontWeight.bold, color: Theme.of(context).colorScheme.primary);
+    TextStyle styleInactive = const TextStyle(fontWeight: FontWeight.normal);
 
     // loop through songs
     for (var i = 0; i < list.length; i++) {
@@ -39,9 +39,9 @@ class SongList extends StatelessWidget {
               TextButton(
                 onPressed: callback,
                 child: Padding(
-                  padding: const EdgeInsets.all(12.0),
+                  padding: const EdgeInsets.only(top: 12, bottom: 12 ),
                   child: Text(song.name, style: isActive ? styleActive : styleInactive),
-                  ),
+                ),
               ),
             ],
           ));

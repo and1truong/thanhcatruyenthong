@@ -82,11 +82,12 @@ class _AppState extends State<App> {
         title: Text(widget.title),
       ),
       bottomNavigationBar: PlayerControl(
-          isPlaying: isPlaying,
-          pathIndex: pathIndex,
-          length: songs.length,
-          onSelectItem: _selectItem,
-          togglePlay: _togglePlay),
+        isPlaying: isPlaying,
+        pathIndex: pathIndex,
+        length: songs.length,
+        onSelectItem: _selectItem,
+        togglePlay: _togglePlay,
+      ),
       body: SingleChildScrollView(
         child: SongList(
             list: songs, pathIndex: pathIndex, onSelectItem: _selectItem),

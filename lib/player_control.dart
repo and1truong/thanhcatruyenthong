@@ -19,25 +19,29 @@ class PlayerControl extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
+    Widget prevBtn = RawMaterialButton(
+      onPressed: () => onSelectItem.call(pathIndex - 1).call(),
+      child: const Icon(Icons.skip_previous_rounded, size: 24),
+    );
+
+    Widget playBtn = RawMaterialButton(
+      onPressed: togglePlay,
+      child: Icon(
+          isPlaying ? Icons.pause_circle : Icons.play_arrow_rounded,
+          size: 36),
+    );
+
+    Widget nextBtn = RawMaterialButton(
+      onPressed: () => onSelectItem.call(pathIndex + 1).call(),
+      child: const Icon(Icons.skip_next_rounded, size: 24),
+    );
+
     return BottomAppBar(
+      padding: const EdgeInsets.all(4),
+      height: 48,
       child: Row(
         mainAxisAlignment: MainAxisAlignment.spaceAround,
-        children: [
-          RawMaterialButton(
-            onPressed: () => onSelectItem.call(pathIndex - 1).call(),
-            child: const Icon(Icons.skip_previous_rounded, size: 32),
-          ),
-          RawMaterialButton(
-            onPressed: togglePlay,
-            child: Icon(
-                isPlaying ? Icons.pause_circle : Icons.play_arrow_rounded,
-                size: 48),
-          ),
-          RawMaterialButton(
-            onPressed: () => onSelectItem.call(pathIndex + 1).call(),
-            child: const Icon(Icons.skip_next_rounded, size: 32),
-          ),
-        ],
+        children: [prevBtn, playBtn, nextBtn],
       ),
     );
   }
