@@ -1,5 +1,5 @@
 ============
-TODO LIST
+🔴 TODO LIST
 ============
 
 1 - Tiếng Việt
@@ -9,3 +9,17 @@ TODO LIST
 5 - Lyrics
 6 - Android build
 7 - iPhone build
+
+============
+🔴 Crawler
+============
+
+1 - …
+
+-------
+Notes
+-------
+
+const Row(children: [
+    Image(image: AssetImage("images/logo.png"), width: 32, height: 32)
+]);
