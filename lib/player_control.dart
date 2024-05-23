@@ -38,7 +38,7 @@ class PlayerControl extends StatelessWidget {
 
     return BottomAppBar(
       padding: const EdgeInsets.all(4),
-      height: 48,
+      height: 60,
       child: Row(
         mainAxisAlignment: MainAxisAlignment.spaceAround,
         children: [prevBtn, playBtn, nextBtn],
