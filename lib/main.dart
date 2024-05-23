@@ -19,7 +19,11 @@ class Wrapper extends StatelessWidget {
           stayAwake: true,
         ),
         iOS: AudioContextIOS(
-          category: AVAudioSessionCategory.playback,
+          category: AVAudioSessionCategory.playAndRecord,
+          options: const {
+            AVAudioSessionOptions.allowAirPlay,
+            AVAudioSessionOptions.allowBluetooth,
+          },
         )));
 
     return MaterialApp(
