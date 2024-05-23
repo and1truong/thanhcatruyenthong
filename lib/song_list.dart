@@ -26,7 +26,7 @@ class SongList extends StatelessWidget {
       Song song = list[i];
       bool isActive = i == pathIndex;
 
-      Future<void> callback() async {
+      void callback() {
         onSelectItem.call(i).call();
       }
 
@@ -34,6 +34,8 @@ class SongList extends StatelessWidget {
           rows.length,
           Row(
             children: [
+              const SizedBox(width: 24),
+              Text('${ song.number.toString().padLeft(3, '0') }. '),
               TextButton(
                 onPressed: callback,
                 child: Padding(
