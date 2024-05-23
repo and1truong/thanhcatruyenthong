@@ -27,7 +27,7 @@ class Wrapper extends StatelessWidget {
       theme: ThemeData(
         colorScheme: ColorScheme.fromSeed(
           seedColor: const Color.fromARGB(250, 17, 73, 84),
-          primary: Color.fromARGB(249, 17, 73, 84),
+          primary: const Color.fromARGB(249, 17, 73, 84),
           inversePrimary: const Color.fromARGB(255, 216, 255, 41),
         ),
         useMaterial3: true,
