@@ -26,13 +26,15 @@ class _AppState extends State<App> {
     super.dispose();
 
     _onCompleteSubscription?.cancel();
+    widget.player.stop();
   }
 
   @override
   void initState() {
-    _onCompleteSubscription = widget.player.onPlayerComplete.listen((data) {
-      _selectItem(pathIndex + 1).call();
-    });
+    _onCompleteSubscription = widget
+      .player
+      .onPlayerComplete
+      .listen((data) => _selectItem(pathIndex + 1).call());
 
     super.initState();
   }
